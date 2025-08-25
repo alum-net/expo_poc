@@ -1,4 +1,4 @@
-import { greeting } from "first-package";
+import { greeting, StyledText } from "first-package";
 import { Text, View } from "react-native";
 
 export default function Index() {
@@ -11,6 +11,9 @@ export default function Index() {
       }}
     >
       <Text>{greeting}</Text>
+      <StyledText>
+        This message comes from a package in the monorepo!
+      </StyledText>
     </View>
   );
 }
